@@ -1,0 +1,14 @@
+﻿using System;
+using System.Text.Json.Serialization;
+
+namespace Test.Models;
+
+public class UserStatisticRequest
+{
+    [JsonPropertyName("user_id")]
+    public string UserId { get; set; }
+    [JsonPropertyName("timeFrom")]
+    public DateTime TimeFrom { get; set; }
+    [JsonPropertyName("timeTo")]
+    public DateTime TimeTo { get; set; }
+}
